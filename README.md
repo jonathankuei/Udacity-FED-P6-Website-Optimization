@@ -21,9 +21,10 @@ I optimized index.html by implementing the following:
 #### Part 2: Optimize Frames per Second in pizza.html
 
 1. Reduce the number of sliding pizzas generated from 200 to 30 pizzas in `main.js` on `line 534`
-1. Use `translateX` instead of `basicLeft` to improve 2D CSS animation performance in `main.js` on `lines 513 - 514`
+1. Add to `.mover` class to improve 2D CSS animation performance in `style.css` on `lines 36 - 37`
 1. Move number generator outside of loop in `main.js` on `line 508`
 1. Move `newWidth` and `determineDX` function outside of loop in `main.js` on `lines 453 - 454`
+1. Cache DOM call into a variable to access DOM only once in `main.js` on `lines 455 - 457`
 
 ### Contributing
 1. Fork it!

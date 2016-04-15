@@ -31,3 +31,12 @@ I optimized index.html by implementing the following:
 1. Commit your changes: git commit -am 'Add new feature'
 1. Push to the branch: git push origin new-feature
 1. Submit a pull request
+
+### Resources
+
+1. [Optimizing Performance](https://developers.google.com/web/fundamentals/performance/ "web performance")
+1. [Analyzing the Critical Rendering Path](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/analyzing-crp.html "analyzing crp")
+1. [Optimizing the Critical Rendering Path](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/optimizing-critical-rendering-path.html "optimize the crp!")
+1. [Avoiding Rendering Blocking CSS](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/render-blocking-css.html "render blocking css")
+1. [Optimizing JavaScript](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/adding-interactivity-with-javascript.html "javascript")
+1. [Why Moving Elements With Translate() Is Better Than Pos:abs Top/left](http://www.paulirish.com/2012/why-moving-elements-with-translate-is-better-than-posabs-topleft/)

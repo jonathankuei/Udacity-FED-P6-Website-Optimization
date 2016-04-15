@@ -8,7 +8,7 @@ To view the optimized website, download the .zip files to your computer locally 
 
 ### Optimizations
 
-####Part 1: Optimize PageSpeed Insights score for index.html
+#### Part 1: Optimize PageSpeed Insights score for index.html
 
 I optimized index.html by implementing the following:
 
@@ -18,7 +18,7 @@ I optimized index.html by implementing the following:
 1. Eliminate render-blocking CSS by using a media query: `<link href="css/print.min.css" rel="stylesheet" media="print">`
 1. Eliminate render-blocking CSS by using inline CSS to replace `style.css`
 
-####Part 2: Optimize Frames per Second in pizza.html
+#### Part 2: Optimize Frames per Second in pizza.html
 
 1. Reduce the number of sliding pizzas generated from 200 to 30 pizzas in `main.js` on `line 534`
 1. Use `translateX` instead of `basicLeft` to improve 2D CSS animation performance in `main.js` on `lines 513 - 514`

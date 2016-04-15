@@ -452,8 +452,9 @@ var resizePizzas = function(size) {
   function changePizzaSizes(size) {
     var dx = determineDx(document.querySelector(".randomPizzaContainer"), size);
     var newwidth = (document.querySelector(".randomPizzaContainer").offsetWidth + dx) + 'px';
-    for (var i = 0; i < document.querySelectorAll(".randomPizzaContainer").length; i++) {
-      document.querySelectorAll(".randomPizzaContainer")[i].style.width = newwidth;
+    var pizzaElements = document.querySelectorAll(".randomPizzaContainer");
+    for (var i = 0; i < pizzaElements.length; i++) {
+      pizzaElements[i].style.width = newwidth;
     }
   };
 
@@ -505,13 +506,11 @@ function updatePositions() {
   var items = document.querySelectorAll('.mover');
 
   //Move number generator outside of for loop
-  var bigNum = (document.body.scrollTop / 1250);
+  var num = (document.body.scrollTop / 1250);
 
   for (var i = 0; i < items.length; i++) {
-    var phase = Math.sin(bigNum + (i % 5));
-    // Use translateX instead of basicLeft
-    var left = -items[i].basicLeft + 1000 * phase + 'px';
-    items[i].style.transform = "translateX("+left+")";
+    var phase = Math.sin(num + (i % 5));
+    items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
   }
 
   // User Timing API to the rescue again. Seriously, it's worth learning.
